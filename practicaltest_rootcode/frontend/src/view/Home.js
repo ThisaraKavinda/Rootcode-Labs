@@ -97,6 +97,10 @@ export default function Home() {
           window.location.reload();
         });
       });
+    // setExpenses(expenses.filter(exp =>
+    //   exp.category == e.value
+    // ))
+    // console.log(expenses)
   };
 
   const onViewReport = async () => {

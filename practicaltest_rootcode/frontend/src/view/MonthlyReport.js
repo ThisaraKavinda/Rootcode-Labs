@@ -19,13 +19,18 @@ export default function (props) {
   ];
 
   const [data, setData] = useState([]);
+  // const [newCategories, setNewCategories] = useState([]);
 
   useEffect(() => {
     getMonthlyReport().then((res) => {
-        console.log(res);
+        // console.log(res);
         if (res.isSuccess) {
-          console.log(res.result);
+          // console.log(res.result);
           setData(res.result);
+          // let x=[]
+          // x = Object.keys(res.result)
+          // console.log(x);
+          // setNewCategories(x)
         } else {
           swal({
             title: "Error!",
